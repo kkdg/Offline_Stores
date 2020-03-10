@@ -12,5 +12,7 @@ Example Magento 2 Module for VSF Custom Entity Type example
 
 ## How to use
 Once the module is installed successfully, visit http://localhost/rest/default/V1/offline-stores/
+
 Then you should see a screen like below
+
 ![rest](rest.png)
