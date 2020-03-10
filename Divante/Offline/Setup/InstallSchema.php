@@ -19,41 +19,43 @@ class InstallSchema implements InstallSchemaInterface
         $installer = $setup;
         $installer->startSetup();
 
-        //START table setup
-        //        $table = $installer->getConnection()->newTable(
-        //            $installer->getTable('kavinga')
-        //        )->addColumn(
-        //            'kid',
-        //            \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
-        //            null,
-        //            ['identity' => true, 'nullable' => false, 'primary' => true, 'unsigned' => true,],
-        //            'Entity ID'
-        //        )->addColumn(
-        //            'title',
-        //            \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
-        //            255,
-        //            ['nullable' => false,],
-        //            'Demo Title'
-        //        )->addColumn(
-        //            'creation_time',
-        //            \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
-        //            null,
-        //            ['nullable' => false, 'default' => \Magento\Framework\DB\Ddl\Table::TIMESTAMP_INIT,],
-        //            'Creation Time'
-        //        )->addColumn(
-        //            'update_time',
-        //            \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
-        //            null,
-        //            ['nullable' => false, 'default' => \Magento\Framework\DB\Ddl\Table::TIMESTAMP_INIT_UPDATE,],
-        //            'Modification Time'
-        //        )->addColumn(
-        //            'is_active',
-        //            \Magento\Framework\DB\Ddl\Table::TYPE_SMALLINT,
-        //            null,
-        //            ['nullable' => false, 'default' => '1',],
-        //            'Is Active'
-        //        );
-        //        $installer->getConnection()->createTable($table);
+        //START table setup;
+        //Uncomment following code if your magento below 2.3
+//                $table = $installer->getConnection()->newTable(
+//                    $installer->getTable('divante_offline_stores')
+//                )->addColumn(
+//                    'id',
+//                    \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
+//                    null,
+//                    ['identity' => true, 'nullable' => false, 'primary' => true, 'unsigned' => true,],
+//                    'Entity ID'
+//                )->addColumn(
+//                    'name',
+//                    \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+//                    255,
+//                    ['nullable' => false,],
+//                    'Store Name'
+//                )->addColumn(
+//                    'address',
+//                    \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+//                    255,
+//                    ['nullable' => true,],
+//                    'Address'
+//                )->addColumn(
+//                    'phone',
+//                    \Magento\Framework\DB\Ddl\Table::TYPE_TEXT,
+//                    255,
+//                    ['nullable' => true,],
+//                    'Phone'
+//                )->addColumn(
+//                    'is_active',
+//                    \Magento\Framework\DB\Ddl\Table::TYPE_SMALLINT,
+//                    null,
+//                    ['nullable' => false, 'default' => '1',],
+//                    'Is Active'
+//                );
+//                $installer->getConnection()->createTable($table);
         //        //END   table setup
     }
 }
+
