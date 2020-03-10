@@ -16,3 +16,13 @@ Once the module is installed successfully, visit http://localhost/rest/default/V
 Then you should see a screen like below
 
 ![rest](rest.png)
+
+
+## More 
+Read more about building custom entity for your shop at : 
+### building new model and its siblings
+- https://www.codilar.com/blog/magento-2-models-resource-models-and-collections/
+- https://bsscommerce.com/confluence/magento-2-eav-model-things-you-may-not-know/
+- http://techjeffyu.com/blog/magento-2-creating-new-eav-entity-and-model
+### install schema in a declarative way
+- https://inchoo.net/magento-2/declarative-schema/
