@@ -1,4 +1,4 @@
-# Offline Module
+# Offline Stores Module
 Example Magento 2 Module for VSF Custom Entity Type example
 
 ## How to install
